@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.dicoding.assosiate.mycataloguemovie.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1">
+        <EditText
+            android:id="@+id/edit_movie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="cari judul film"
+            android:text="captain"
+            android:layout_weight="0.8"/>
+        <Button
+            android:id="@+id/btn_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cari"
+            android:layout_weight="0.2"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_movie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

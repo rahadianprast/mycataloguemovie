@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:padding="8dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.dicoding.assosiate.mycataloguemovie.activity.DetailMovieActivity">
+    <LinearLayout
+        android:id="@+id/linear_atas"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/loading_shape"
+            android:id="@+id/aa_thumbnail"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+            <TextView
+                android:id="@+id/aa_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="movie Title"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/aa_vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rating_background"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_star_black_24dp"
+                android:paddingRight="5dp"/>
+            <TextView
+                android:id="@+id/aa_releseasedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relese Date"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/linear_atas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/aa_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="overview"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
